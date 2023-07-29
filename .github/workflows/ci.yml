@@ -1,12 +1,5 @@
-name: Deploy web app to Azure Static Web Apps
-
-on:
-  push:
-    branches: [ $default-branch ]
-  pull_request:
-    types: [opened, synchronize, reopened, closed]
-    branches: [ $default-branch ]
-
+name: Deploy to Azure
+on: push
 # Environment variables available to all jobs and steps in this workflow
 env:
   APP_LOCATION: "/" # location of your client code
